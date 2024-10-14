@@ -46,8 +46,7 @@ main {
 /*nav styling, flex to make it look good*/
 nav {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #81D4FA;
     width: 100%;
     height: 4rem;
@@ -355,7 +354,6 @@ footer .socials a:hover {
 @media (max-width: 720px) {
     /*made nav direction down*/
     nav {
-        flex-direction: column;
         justify-content: center;
         height: 70px;
     }
