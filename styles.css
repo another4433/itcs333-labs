@@ -1,0 +1,482 @@
+/*
+Contributers of ITCS333 Assignment 1:
+Student names: Ali Mohamed Ali Hassan, Ali Othman Abbas
+Student IDs: 202105103, 202208581
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Poppins:wght@400;600&display=swap');
+
+/*hello*/
+* {
+    box-sizing: border-box;
+}
+
+/*defualt font*/
+html {
+    font-size: 10px;
+}
+
+/*body style*/
+body {
+    background-color: #FFF9C4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+/*center the heading of the website*/
+h1 {
+    text-align: center;
+}
+
+/*defult image behaviour*/
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*main styling, nav and footeris not included in main*/
+main {
+    width: 60%;
+    min-width: 700px;
+    margin: 0 auto;
+}
+
+
+/*nav styling, flex to make it look good*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #81D4FA;
+    width: 100%;
+    height: 4rem;
+    white-space: nowrap;
+}
+
+/*navbar elements styling, min-content for no overflow*/
+.nav-elements {
+    display: flex;
+    width: min-content;
+    height: 100%;
+}
+
+/*added border*/
+.nav-elements span {
+    display: flex;
+    align-items: center;
+    border-right: black solid 1px;
+    white-space: nowrap;
+}
+
+/*removed last border*/
+.nav-elements span:last-of-type {
+    border-right: none;
+}
+
+/*added interative link, added padding to evenly space the anchors*/
+nav a {
+    display:flex;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #FFF9C4;
+    height: 100%;
+}
+
+/*added hover effect*/
+nav a:hover {
+    background-color: #FFF9C4;
+    color: black;
+}
+/*welcome message styling, made it center*/
+header {
+    text-align: center;
+    margin: 0, auto;
+    background-color: #81D4FA;
+    border-radius: 10px;
+}
+
+/*made subjects grid*/
+.subjects-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    background-color: #fff492;
+
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*had the title span the whole column*/
+.subjects-overview h2 {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.subject {
+    background-color: #f9f2b2;
+    padding: 10px;
+    border-radius: 10px
+}
+
+/*starting styling the table*/
+#schedule {
+    width: 100%;
+    background-color: #fff492;
+    border-radius: 10px;
+
+    margin-bottom: 50px;
+}
+
+#schedule h2, #schedule td{
+    text-align: center;
+}
+
+th {
+    background-color: #ffe600;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+td {
+    background-color: #f9f2b2;
+    border-radius: 10px;
+}
+
+/*empty spacing to make table look good*/
+.spacing {
+    background-color: #fff492;
+}
+
+table {
+    font-size: 1.7rem;
+    margin: 0 auto;
+    width: 100%;
+    border-spacing: 1rem;
+}
+
+/*made activites flex*/
+.activities {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff492;
+    border-radius: 15px;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.activities h2 {
+    text-align: center;
+}
+
+/*had some figures be write, while had some be left, made figure grid for easy alignment*/
+.activity-figure-right {
+    display: grid;
+    background-color: #f9f2b2;
+    border-radius: 15px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+
+.activity-figure-right img {
+    grid-column: 2/3;
+    border-radius: 15px;
+}
+
+/*made figcaption centered, also moved so that it is at the same coloum as image*/
+.activity-figure-right figcaption {
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/*same as above, but left*/
+.activity-figure-left {
+    display: grid;
+    background-color: #f9f2b2;
+    border-radius: 15px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.activity-figure-left img {
+    border-radius: 15px;
+    grid-column: 1/2;
+}
+
+.activity-figure-left figcaption {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+/*made annoucments grid*/
+#announcements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 10px;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #fff492;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+/*made a all single announcments span the whole hight of the available space*/
+.announcement {
+    background-color: #f9f2b2;
+    border-radius: 15px;
+    padding: 10px;
+    height: 100%;
+}
+
+#announcements h2 {
+    text-align: center;
+    grid-column: 1/3;
+}
+
+/*made teachers flex*/ 
+#teachers-info {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #fff492;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*make figures flex too, and made them evenly spaced*/
+#teachers-info figure {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+    column-gap: 10px;
+    background-color: #f9f2b2;
+    border-radius: 15px;
+}
+
+
+#teachers-info figcaption {
+    width: 50%;
+    text-align: center;
+}
+
+#teachers-info figure img {
+    grid-row: 1 / -3 ;
+    width: 70%;
+    max-width: 300px;
+    border-radius: 15px;
+}   
+
+/*made about us just a simple sectino, no flex or grid*/
+#about-us {
+    background-color: #fff492;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#about-us p {
+    background-color: #f9f2b2;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/*made footer flex with space between*/
+footer {
+    background-color: #81D4FA;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 60px;
+}
+
+footer p {
+    margin: 0;
+}
+/*made social div flex, and centered the icons*/
+footer .socials {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+    font-size: 40px;
+}
+
+/*removed underline*/
+footer a {
+    text-decoration: none;
+    color:#f9f2b2
+}
+
+/*made icons block and added border*/
+footer .socials span {
+    display: block;
+    height: 100%;
+    width: 100px;
+    border-right: black solid 1px;
+}
+
+footer .socials span:last-of-type {
+    border-right: none;
+}
+
+/*centered the image icons*/
+footer .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #f9f2b2;
+}
+
+/*added hover effect*/
+footer .socials a:hover {
+    background-color: #FFF9C4;
+    color: black;
+}
+
+
+/*for desktop small screen*/
+@media (max-width: 720px) {
+    /*made nav direction down*/
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        height: 70px;
+    }
+
+    /*changed width of main*/
+    main {
+        min-width: 200px;
+        width: 500px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+
+    table {
+        font-size: 1.2rem;
+    }
+
+    /*made image come first than teacher description*/
+    .teachers-image {
+        flex-direction: column;
+    }
+}
+
+/*for mobiles*/
+@media screen and (max-width: 550px) {
+    main {
+        width: 95%;
+        font-size: 1.5rem;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    .nav-elements {
+        font-size: 1.4rem;
+    }
+
+
+
+    .subjects-overview{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*made footer grid, to make icons come first, than text*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100px;
+    }
+
+    footer .socials {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    p {
+        grid-row: 2/3
+    }
+
+    address {
+        grid-row: 2/3
+    }
+
+    .activities figure figcaption {
+        font-size: 1.3rem;
+    }
+
+    #schedule {
+        height: 400px
+    }
+
+    table {
+        font-size: 1.3rem;
+        height: 80%
+    }
+
+    .subjects-overview {
+        grid-template-columns: 1fr;
+
+    }
+
+    .subject {
+        grid-column: 1/2;
+    }
+
+    .activity-figure-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activity-figure-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #announcements {
+        grid-template-columns: 1fr;
+    }
+
+    .announcement {
+        grid-column: 1/2;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    table {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    .nav-elements {
+        font-size: 1.2rem;
+    }
+}
+
