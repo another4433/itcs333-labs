@@ -14,39 +14,42 @@ Student IDs: 202105103
 -->
 <html lang="en">
   <head>
-    <title>statistics</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Student Enrollment Statistics</title>
+    <meta name="Data Encoder" charset="utf-8">
+    <meta name="Color Scheme" content="light dark">
+    <meta name="Website Layout" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.main.css" referrerpolicy="origin">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>UOB IT Collage Enrollement Data (2018-2023)</header>
+    <h1>UOB IT Collage Enrollement Data (2018-2023)</h1>
     <main class='overflow-auto '>
-      <table>
-        <thead data-theme="light">
-          <tr>
-            <th>Year</th>
-            <th>Semester</th>
-            <th>The Programs</th>
-            <th>Nationality</th>
-            <th>Colleges</th>
-            <th>Number of Students</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php foreach($result->results as $semester): ?>
+      <div class="pico">
+        <table>
+            <thead data-theme="light">
             <tr>
-              <td><?=$semester->year?></td>
-              <td><?=$semester->semester?></td>
-              <td><?=$semester->the_programs?></td>
-              <td><?=$semester->nationality?></td>
-              <td><?=$semester->colleges?></td>
-              <td><?=$semester->number_of_students?></td>
+                <th>Year</th>
+                <th>Semester</th>
+                <th>The Programs</th>
+                <th>Nationality</th>
+                <th>Colleges</th>
+                <th>Number of Students</th>
             </tr>
-          <?php endforeach?>
-        </tbody>
-      </table>
+            </thead>
+            <tbody>
+            <?php foreach($result->results as $semester): ?>
+            <tr>
+                <td><?=$semester->year?></td>
+                <td><?=$semester->semester?></td>
+                <td><?=$semester->the_programs?></td>
+                <td><?=$semester->nationality?></td>
+                <td><?=$semester->colleges?></td>
+                <td><?=$semester->number_of_students?></td>
+            </tr>
+            <?php endforeach?>
+            </tbody>
+        </table>
+      </div>
     </main>
   </body>
 </html>
