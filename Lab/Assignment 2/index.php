@@ -1,10 +1,17 @@
+<!--
+Contributers of ITCS333 Assignment 2:
+Student names: Ali Mohamed Ali Hassan, Ali Othman Abbas
+Student IDs: 202105103, 202208581
+-->
+
+
 <?php
 
 //API call
 $URL = 'https://data.gov.bh/api/explore/v2.1/catalog/datasets/01-statistics-of-students-nationalities_updated/records?where=colleges%20like%20%22IT%22%20AND%20the_programs%20like%20%22bachelor%22&limit=100';
 
-$reponse = file_get_contents($URL);
-$result = json_decode($reponse); //API results
+$response = file_get_contents($URL);
+$result = json_decode($response); //API results
 ?>
 
 <!DOCTYPE html>
