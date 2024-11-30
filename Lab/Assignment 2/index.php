@@ -9,22 +9,21 @@ $result = json_decode($reponse); //API results
 
 <!DOCTYPE html>
 <!--
-Contributers of ITCS333 Assignment 1:
-Student names: Ali Mohamed Ali Hassan, Ali Othman
+Contributers of ITCS333 Assignment 2:
+Student names: Ali Mohamed Ali Hassan, Ali Othman Abbas
 Student IDs: 202105103, 202208581
 -->
 <html lang="en">
   <head>
-    <title>Student Enrollment Statistics</title>
-    <meta name="Data Encoder" charset="utf-8"> <!--Format used to read data in the website-->
-    <meta name="Color Scheme" content="light dark"> <!--Applying theme to the webpage to be in the color between white and dark-->
-    <meta name="Website Layout" content="width=device-width, initial-scale=1.0"> <!--Allowing the page to be responsive on any device-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"> <!--CSS Framework used to apply designs and styles to the website-->
-    <link rel="stylesheet" href="styles.css"> <!--Custom CSS style that helps applying more style to the website-->
+    <title>Student Enrollment Information</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>UOB IT Collage Enrollement Data (2018-2023)</header>
-    <main class="pico">
+    <main>
       <table>
         <thead data-theme="light"> <!--It is used to group the headers together to apply certain style to it-->
           <tr>
