@@ -3,22 +3,28 @@
 //API call
 $URL = 'https://data.gov.bh/api/explore/v2.1/catalog/datasets/01-statistics-of-students-nationalities_updated/records?where=colleges%20like%20%22IT%22%20AND%20the_programs%20like%20%22bachelor%22&limit=100';
 
-$response = file_get_contents($URL);
-$result = json_decode($response); //API results
+$reponse = file_get_contents($URL);
+$result = json_decode($reponse); //API results
 ?>
 
 <!DOCTYPE html>
+<!--
+Contributers of ITCS333 Assignment 1:
+Student names: Ali Mohamed Ali Hassan, Ali Othman
+Student IDs: 202105103
+-->
 <html lang="en">
   <head>
-    <title>statistics</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Student Enrollment Statistics</title>
+    <meta name="Data Encoder" charset="utf-8">
+    <meta name="Color Scheme" content="light dark">
+    <meta name="Website Layout" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>UOB IT Collage Enrollement Data (2018-2023)</header>
-    <main class='overflow-auto '>
+    <main class="pico">
       <table>
         <thead data-theme="light">
           <tr>
