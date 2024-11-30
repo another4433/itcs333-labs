@@ -1,10 +1,3 @@
-<!--
-Contributers of ITCS333 Assignment 2:
-Student names: Ali Mohamed Ali Hassan, Ali Othman Abbas
-Student IDs: 202105103, 202208581
--->
-
-
 <?php
 
 //API call
