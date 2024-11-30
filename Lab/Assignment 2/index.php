@@ -3,8 +3,8 @@
 //API call
 $URL = 'https://data.gov.bh/api/explore/v2.1/catalog/datasets/01-statistics-of-students-nationalities_updated/records?where=colleges%20like%20%22IT%22%20AND%20the_programs%20like%20%22bachelor%22&limit=100';
 
-$reponse = file_get_contents($URL); //Reading content from API
-$result = json_decode($reponse); //API results
+$response = file_get_contents($URL); //Reading content from API
+$result = json_decode($response); //API results
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ Student IDs: 202105103, 202208581
   </head>
   <body>
     <header>UOB IT Collage Enrollement Data (2018-2023)</header>
-    <main>
+    <main class='overflow-auto'>
       <table>
         <thead data-theme="light"> <!--It is used to group the headers together to apply certain style to it-->
           <tr>
