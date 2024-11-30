@@ -23,8 +23,8 @@ Student IDs: 202105103, 202208581
   </head>
   <body>
     <header>UOB IT Collage Enrollement Data (2018-2023)</header>
-    <main class='overflow-auto'>
-      <table>
+    <main class="overflow-auto">
+      <table class="striped">
         <thead data-theme="light"> <!--It is used to group the headers together to apply certain style to it-->
           <tr>
             <th>Year</th>
