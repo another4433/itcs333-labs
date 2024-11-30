@@ -11,7 +11,7 @@ $result = json_decode($reponse); //API results
 <!--
 Contributers of ITCS333 Assignment 1:
 Student names: Ali Mohamed Ali Hassan, Ali Othman
-Student IDs: 202105103
+Student IDs: 202105103, 202208581
 -->
 <html lang="en">
   <head>
